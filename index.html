@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="estilos.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <title>Minecraft By Jockerel SHOP</title>
+</head>
+
+<body>
+
+   <nav class="navbar  bg-dark">
+       <ul>
+           <li>
+               <button class="btna">INICIO</button>
+           </li>
+           <li>
+               <button class="btna">CONTACTO</button>
+           </li>
+           <li>
+               <button class="btna">GALERÍA</button>
+           </li>
+        </ul>
+        
+    </nav>
+    <header class="bg-dark">
+        <div class="container">
+            <h1 class="text-center">BIENVENIDX A NUESTRA TIENDA ONLINE</h1>
+            <hr>
+        </div>
+    </header>
+<!-- TIENDA: -->
+<section class="allContent"> 
+    <section class="store">
+        <div class="container">
+            <div class="items">
+                <div class="row">
+
+                    <div class="col-12 col-md-6">
+                        <div class="item shadow mb-4">
+                            <h3 class="producto">El Acantilado</h3>
+                            <img class="producto-imagen" src="images/foto1.jpeg" alt = "Imagen del producto">
+
+                            <div class="item-details">
+                                <h4 class="producto-precio">$250</h4>
+                                <button class="item-button btna addCarrito">AÑADIR AL CARRITO</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6">
+                        <div class="item shadow mb-4">
+                            <h3 class="producto">Aguas Nocturnas</h3>
+
+                            <img class="producto-imagen" src="./images/foto2.jpeg" alt="Imagen del producto">
+
+                            <div class="item-details">
+                                <h4 class="producto-precio">$200</h4>
+                                <button class="item-button btna addCarrito">AÑADIR AL CARRITO</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-12 col-md-6">
+                        <div class="item shadow mb-4">
+                            <h3 class="producto">Mundo Fueguino</h3>
+
+                            <img class="producto-imagen" src="./images/foto3.jpeg" alt="Imagen del producto">
+
+                            <div class="item-details">
+                                <h4 class="producto-precio">$200</h4>
+                                <button class="item-button btna addCarrito">AÑADIR AL CARRITO</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6">
+                        <div class="item shadow mb-4">
+                            <h3 class="producto">Planeta Blanco</h3>
+
+                            <img class="producto-imagen" src="images/foto4.jpeg" alt="Imagen del producto">
+
+                            <div class="item-details">
+                                <h4 class="producto-precio">$150</h4>
+                                <button class="item-button btna addCarrito">AÑADIR AL CARRITO</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</section>
+<!-- FIN TIENDA -->
+
+<!-- CARRITO: -->
+    <section class="shopping-cart">
+        <div class="container">
+            <h1 class="text-center text-cart">CARRITO</h1>
+            <hr>
+            <div class="row">
+                <div class="col-6">
+                    <div class="shopping-cart-header">
+                        <h6 class="text-cart">Producto</h6>
+                    </div>
+                </div>
+                <div class="col-2">
+                    <div class="shopping-cart-header">
+                        <h6 class="text-cart">Precio</h6>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="shopping-cart-header">
+                        <h6 class="text-cart">Cantidad</h6>
+                    </div>
+                </div>
+            </div>
+    <!-- PRODUCTOS, CARRITO: -->
+            <div class="shopping-cart-items carritoItemContainer">
+            </div>
+
+    <div class="row">
+        <div class="col-12">
+            <div class="shopping-cart-total bg-dark d-flex align-items-center">
+                <p class="mb-0 text-total">Total de su compra:</p>
+                <p class="ml-4 mb-0 shoppingCartTotal bg-dark text-total">$0</p>
+                    <div class="toast ml-auto bg-info" role="alert" aria-live="assertive" aria-atomic="true"
+                            data-delay="2000">
+                            <div class="toast-header">
+                                <span>✅</span>
+                                <strong class="mr-auto ml-1 text-secondary">Usted añadió al carrito:</strong>
+                                <button type="button" class="ml-2 mb-1 close btna" data-dismiss="toast" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="toast-body text-white">
+                                Agregó el elemento correctamente
+                            </div>
+                        </div>
+                        <button class="btna ml-auto btn-compra" type="button" data-toggle="modal"
+                            data-target="#comprarModal">Finalizar compra</button>
+                    </div>
+                </div>
+            </div>
+
+
+
+    <!-- MODAL COMPRA -->
+            <div class="modal fade" id="comprarModal" tabindex="-1" aria-labelledby="comprarModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="comprarModalLabel">Gracias por su compra</h5>
+                            <button type="button" class="close btna" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <p>Pronto recibirá su pedido</p>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btna" data-dismiss="modal">Cerrar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    <!-- FIN MODAL COMPRA -->
+
+
+        </div>
+
+    </section>
+<!-- FIN CARRITO -->
+
+
+<!-- FOOTER -->
+    <footer class="bg-dark p-3 mt-5">
+        <p class="text-center m-0 text-muted">Tienda online de mundos de Minecraft.</p>
+    </footer>
+<!-- FIN FOOTER -->
+
+
+
+
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+        integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+        crossorigin="anonymous"></script>
+
+<script src="./shop.js"></script>
+
+</body>
+
+</html>
